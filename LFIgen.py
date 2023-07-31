@@ -12,13 +12,15 @@ def generate_combinations_2d(arr_2d):
         for b in range(1, rows): 
             for c in range(len(arr_2d[b])):
                 next_element = arr_2d[b][c]
-                combinations.append((f"{a}{a}{next_element}")*5)
+                combinations.append((f"{a}{a}{next_element}")*5+"test")
 
 
     return combinations
 
 
 # Example usage:
-two_d_array = [['a1', 'a2', 'a3'], ['b1', 'b2', 'b3'], ['c1', 'c2']]
+two_d_array = [['%c0%2e', '%c0%2e', '%c0ae'], ['%c0%af', '%e0%80%af', '%c0%2f'], ['%c0%5c', '%c0%80%5c']]
 result = generate_combinations_2d(two_d_array)
 print(result)
+
+
