@@ -21,6 +21,9 @@ def generate_combinations_2d(arr_2d):
 # Example usage:
 two_d_array = [['%c0%2e', '%c0%2e', '%c0ae'], ['%c0%af', '%e0%80%af', '%c0%2f'], ['%c0%5c', '%c0%80%5c']]
 result = generate_combinations_2d(two_d_array)
-print(result)
+
+# Print each entry in separate lines
+for entry in result:
+    print(entry)
 
 
